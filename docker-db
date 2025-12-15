@@ -1,2 +1,4 @@
 FROM mysql:5.7.44
+ENV MYSQL_ROOT_PASSWORD=devopspassword
+ENV MYSQL_DATABASE=accounts
 COPY Docker-db/db_backup.sql /docker-entrypoint-initdb.d/

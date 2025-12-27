@@ -1,0 +1,4 @@
+FROM mysql:5.7.44
+MYSQL_ROOT_PASSWORD:devopspassword
+MYSQL_DATABASE:accounts
+COPY ./Docker-db/db* /docker-entrypoint-initdb.d/
